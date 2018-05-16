@@ -37,3 +37,13 @@ h1{
 .imgRound{
   border-radius: 5px;
 }
+
+#tableSection{
+  background-color:$darkColor;
+  color:$bgColor;
+}
+
+#tableSection header h1{
+  color:$bgColor;
+  padding:2rem 0;
+}
