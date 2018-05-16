@@ -11,19 +11,23 @@ body{
   background-color: $bgColor;
   font-family: 'Lato', sans-serif;
 }
+
 .mainHeader, footer{
-  background-color: $darkColor;
+  background-color: $lightColor;
 }
 
 header, footer{
-  color:white;
+  color:#0B3C49;
   text-align: center;
+}
+
+.dropdown-item{
+  color:$darkColor;
 }
 
 h1{
   font-family: 'Raleway', sans-serif;
 }
-
 
 //sections
 #fourPics{
