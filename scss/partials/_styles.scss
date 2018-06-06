@@ -29,12 +29,23 @@ h1{
   font-family: 'Raleway', sans-serif;
 }
 
+img{
+  @media (min-width:600px){
+    max-height:80vh;
+    max-width: 100%;
+    object-fit: cover;
+}
+}
+
 //sections
 section{
   min-height: 100vh;
   border-bottom: 2px solid $accentColor;
-
+  // @media (min-width:600px){
+  //   height: 100vh;
+  // }
 }
+
 section header h1{
   color:$darkColor;
   padding:2rem 0;
@@ -45,7 +56,12 @@ section header h1{
 
 .jumbotron{
   margin-bottom: 0;
-  padding-top: 0;
+  padding: 0 2rem;
+  background-color: transparent;
+  img{
+    width:100%;
+    object-fit:cover;
+  }
 }
 
 .learnMoreBtn{
@@ -54,10 +70,15 @@ section header h1{
   -webkit-box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.6);
   -moz-box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.6);
   box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.6);
+  margin-bottom: 3rem;
 }
 
 #else{
   background-color: $lightColor;
+  img{
+    width:100%;
+    object-fit:cover;
+  }
 }
 
 #else h3{
@@ -75,7 +96,7 @@ section header h1{
   -moz-box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.6);
   box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.6);
   display:inline-block;
-  margin: 1rem;
+  margin: 1rem 0 2rem 0;
   position: relative;
 }
 
